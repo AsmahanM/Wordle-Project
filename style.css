@@ -18,4 +18,44 @@ hr {
     width: 350px;
     height: 420px;
     background-color: green;
+    margin: 0 auto;
+    margin-top: 3px; /*push the board down a bit*/
+    display: flex; /*keep tile elements within our box*/
+    flex-wrap: wrap;
+}
+
+.tile {
+    /* the individual tiles/letetr boxes*/
+    border: 2px solid lightgray;
+    width: 60px;
+    height: 60px;
+    margin: 2.5px;
+
+    /*text/letters*/
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /*centers/aligns vertically*/ 
+    align-items: center;
+}
+
+/*changing the colour of the tiles*/
+
+.correct {
+background-color: #6aaa64; /*same shade of green*/
+color: white;
+border-color: white;
+}
+
+.present {
+    background-color: #c9b458; /*same shade of yellow*/
+    color: white;
+    border-color: white;
+}
+
+.absent {
+    background-color: #787c7e; /*same shade of grey*/
+    color: white;
+    border-color: white;
 }
