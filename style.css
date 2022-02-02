@@ -11,13 +11,12 @@ hr {
 #title {
     font-size: 36px; /*the title is 27pt large (on word), whicih is equivalent to 36px when converted*/
     font-weight: bold;
-    letter-spacing: 2px; */space between the letters*/
+    letter-spacing: 2px; /*creates space between the letters*/
 }
 
 #board {
     width: 350px;
     height: 420px;
-    background-color: green;
     margin: 0 auto;
     margin-top: 3px; /*push the board down a bit*/
     display: flex; /*keep tile elements within our box*/
@@ -43,19 +42,19 @@ hr {
 /*changing the colour of the tiles*/
 
 .correct {
-background-color: #6aaa64; /*same shade of green*/
+background-color: #6aaa64; /*same shade of green as original*/
 color: white;
 border-color: white;
 }
 
 .present {
-    background-color: #c9b458; /*same shade of yellow*/
+    background-color: #c9b458; /*same shade of yellow as original*/
     color: white;
     border-color: white;
 }
 
 .absent {
-    background-color: #787c7e; /*same shade of grey*/
+    background-color: #787c7e; /*same shade of grey as original*/
     color: white;
     border-color: white;
 }
