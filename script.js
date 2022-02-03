@@ -26,4 +26,20 @@ function initialize() {//will create tiles and event listeners for game
             document.getElementById("board").appendChild(tile) //appends the tile to the "board" element created in our HTML. 
         }
     }
+
+//waiting for the letter to be entered:
+document.addEventListener("keyup", (e)=> {
+    if (gameOver) return ;
+
+    if("KeyA" <= e.code && e.code <= "KeyZ") //(if keyup isn't equal to any key that isn't A-Z...). e.code is the popup that shares what key was pressed.
+    if (col < width){
+        let currTile = document.getElementById(row.toString() + '-' +  col.toString());
+        if currTile.innerText == "" {
+            currTile.innerText = e.code[3]; //index 3 of e.code returns the letter and not the word 'key' (e.g. index 3 of "KeyA").
+            col += 1; //increment column by 1.
+        }
+    }
+})
+
+
 }

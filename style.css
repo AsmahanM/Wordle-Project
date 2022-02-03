@@ -19,7 +19,7 @@ hr {
     height: 420px;
     margin: 0 auto;
     margin-top: 3px; /*push the board down a bit*/
-    display: flex; /*keep tile elements within our box*/
+    display: flex; /*keep tile elements within our box. Without this, we'd have a single (very long) column of all the tiles).*/
     flex-wrap: wrap;
 }
 
@@ -35,8 +35,8 @@ hr {
     font-size: 36px;
     font-weight: bold;
     display: flex;
-    justify-content: center; /*centers/aligns vertically*/ 
-    align-items: center;
+    justify-content: center; /*centers the letters within the tile (vertically)*/ 
+    align-items: center; /*centers the letters within the tile (horizontally)*/
 }
 
 /*changing the colour of the tiles*/
