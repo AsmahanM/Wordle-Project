@@ -40,6 +40,7 @@ document.addEventListener("keyup", (e) => {
         }
     }
 }
+
 else if (e.code == "Backspace") {
     if (0 < column && column <= width) { //if the tile we're on is in the 1st column and not beyond the 5th column (can't backspace on columns 0 and 6)ew
         column -=1;
@@ -47,6 +48,18 @@ else if (e.code == "Backspace") {
     let currTile = document.getElementById(row.toString() + '-' +  column.toString());
     currTile.innerText = ""; 
 }
+
+else if  (e.code == "Enter") { //if user pushes enter key
+    update() //this method replaces the content of the element with the provided newContent argument and returns the element
+    row +=1 //move to the next row
+    column = 0 //start from the 1st tile on the new row
+}
+
+if (!gameOver && row == height) { //user has used up all their attempts
+    gameOver = true;
+    document.getElementById("answer").innerText=word //answer is revealed.
+}
+
 })
 
 }
