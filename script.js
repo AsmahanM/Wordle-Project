@@ -5,7 +5,7 @@ var row = 0 //current attempt number*/
 var column = 0 //current letter in the row
  
 var gameOver = false
-var word = "SQUID"
+var word = "APPLE"
 
 window.onload = function(){
     initialize();
