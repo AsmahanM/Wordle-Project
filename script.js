@@ -41,7 +41,7 @@ document.addEventListener("keyup", (e) => {
     }
 }
 else if (e.code == "Backspace") {
-    if (0 < column && column <= width) {
+    if (0 < column && column <= width) { //if the tile we're on is in the 1st column and not beyond the 5th column (can't backspace on columns 0 and 6)ew
         column -=1;
     }
     let currTile = document.getElementById(row.toString() + '-' +  column.toString());
