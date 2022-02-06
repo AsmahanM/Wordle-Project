@@ -11,7 +11,9 @@ window.onload = function(){
     initialize();
 }
 
-function initialize() {//will create tiles/game board and event listeners for game.
+
+//CREATING THE BOARD:
+function initialize() {
 
 //THE ACTUAL BOARD:
 //the following for loop should help us create 30 tile elements with  escalating ID numbers representing the current row (attempt) and column (current letter/position in the word).
@@ -27,7 +29,8 @@ function initialize() {//will create tiles/game board and event listeners for ga
         }
     }
 
-//waiting for the letter to be entered:
+
+//WAITING FOR USER TO ENTER LETTERS
 document.addEventListener("keyup", (e) => {
     if (gameOver) return;
 
@@ -65,6 +68,7 @@ if (!gameOver && row == height) { //user has used up all their attempts.
 }
 
 
+//UPDATING THE COLOUR OF THE TILES:
 function update() {
     let correct = 0; //iterating through each tile one by one to look at each letter. 
     for (let c = 0; c < width; c++) {
