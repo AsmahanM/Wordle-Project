@@ -40,6 +40,13 @@ document.addEventListener("keyup", (e) => {
         }
     }
 }
+else if (e.code == "Backspace") {
+    if (0 < column && column <= width) {
+        column -=1;
+    }
+    let currTile = document.getElementById(row.toString() + '-' +  column.toString());
+    currTile.innerText = ""; 
+}
 })
 
 }
