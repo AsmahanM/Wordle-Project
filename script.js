@@ -65,3 +65,25 @@ if (!gameOver && row == height) { //user has used up all their attempts
 }
 
 
+function update() {
+    let correct = 0; //iterating through each tile one by one to look at each letter. 
+    for (let c = 0; c < width; c++) {
+        let currTile = document.getElementById(row.toString() + "-" + c.toString());
+        let letter = currTile.innerText
+
+        if (word[c] == letter) { //if the word at index c is equal to the letter the user entered...
+            currTile.classList.add("correct"); //...add "correct" to t hat tile's class list so that the styling can be applied. We're checking to see if each individual tile is correct.
+
+        else if (word.includes(letter)) {
+            currTile.classList.add("present"); //if the letter is only present, then the "present" classlist is added so that the styling can be applied. 
+        }
+
+        else { 
+                currTile.classList.add("absent"); //if the letter is not present in the word.
+    } 
+    if (correct == width) {
+        gameOver = true; //if we have 5 correct tiles, then it's game over.
+    }
+    }
+}
+}
