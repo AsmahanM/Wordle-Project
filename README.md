@@ -23,5 +23,5 @@ I opted to build the actual letter board using a JavaScript for loop as opposed 
   
 ---
 ### Instructions:
-You can access my project via the link in the about section (the column on the right). Once the page has loaded, enter any letter using your keyboard and guess the word! Press backspace to delete a letter and enter to subit your attempt once you've entered 5 letters. 
+You can access my project via the link in the about section (the column on the right). Once the page has loaded, enter any letter using your keyboard and guess the word! Press backspace to delete a letter and enter to submit your attempt once you've entered 5 letters. 
 
