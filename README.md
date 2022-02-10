@@ -18,8 +18,8 @@ I opted to build the actual letter board using a JavaScript for loop as opposed 
 
 ---
 ### Project Snapshot:
-<a href=![Screen Shot 2022-02-10 at 22 57 41](https://user-images.githubusercontent.com/82019270/153511240-5fe004b0-4602-4090-848f-48ff6cb0aee1.png)
-"">Screenshot of Wordle board with coloured tiles</a>
+![Screen Shot 2022-02-10 at 22 57 41](https://user-images.githubusercontent.com/82019270/153511240-5fe004b0-4602-4090-848f-48ff6cb0aee1.png)
+
   
 ---
 ### Instructions:
